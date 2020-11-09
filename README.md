@@ -1,6 +1,6 @@
 # Projetor Contador com estado "Global".
 
-Este projeto surge devido a necessidade de  como resolver o problema de passagem de estado de um componente para outro,Uma das formas de se fazer a passagem é a seguinte:
+Este projeto surge devido a necessidade de  como resolver o problema de passagem de estado de um componente para outro, uma das formas de se fazer a passagem é a seguinte:
  ## De pai para o filho,
   O pais passa  Atributos -> e o filho recebe Props;
  ##  De Filho para pai, 
