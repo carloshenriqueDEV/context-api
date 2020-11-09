@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ButtonsOfCounter from './componets/ButtonsOfCounter'
+import Viewfinder from './componets/Viewfinder'
+import { CounterProvider } from './contexts/ContextCounter'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Counter with Context API</h1>
+      {/* Iniciando o contexto e envolvendo os filhos que teram acesso a ele. */}
+      <CounterProvider>
+        <Viewfinder></Viewfinder>
+        <ButtonsOfCounter></ButtonsOfCounter>
+      </CounterProvider>
     </div>
   );
 }
